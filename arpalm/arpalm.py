@@ -67,7 +67,7 @@ class arpa_parser(object):
                     self.add_trigram_line(line)
             else:
                 print('unknown state, breaking')
-		raise Exception('unknown state, breaking')
+                raise Exception('unknown state, breaking')
                 
     def add_unigram_line(self, line):
         entries = line[:-1].split('\t')
